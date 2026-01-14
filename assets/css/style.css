@@ -1,96 +1,65 @@
-body {
-    margin: 0;
-    font-family: "Montserrat", sans-serif;
-    font-size: 1rem;
-    background-color: gray;
+*{margin:0;padding:0;box-sizing:border-box}
+
+body{
+  font-family:Inter,sans-serif;
+  background:
+    radial-gradient(1200px 600px at 30% -10%, #1a1a1a, transparent),
+    radial-gradient(600px 400px at 80% 30%, #111, transparent),
+    #000;
+  color:#fff;
+  
+  margin: 0 auto;
 }
 
-.container {
-    width: 100%;
-    max-width: 1200px;
-    padding-left: 1rem;
-    margin: 0 auto;
+/* noise */
+.bg-noise{
+  position:fixed;
+  inset:0;
+  background:url("https://grainy-gradients.vercel.app/noise.svg");
+  opacity:.07;
+  pointer-events:none;
 }
 
-/* header */
-.header {
-    position: relative;
+/* top */
+.topbar{
+  height:90px;
+  padding:0 100px;
+  display:flex;
+  align-items:center;
+  justify-content: space-between;
 }
 
-.header_inner {
-    padding: 1.2rem 0;
-
-    justify-content: space-between;
-
+.ace{
+  display: flex;
+  gap: 5px;
 }
 
-
-
-/* navbar */
-.nav {
-    display: flex;
-    align-items: center;
-    height: 100%;
-    justify-content: space-between;
+.logo{
+  font-family:Playfair Display,serif;
+  letter-spacing:2px;
+  margin-top: 10px;
 }
 
-.acex {
-    display: flex;
+.topbar nav a{
+  margin-left:36px;
+  font-size:17px;
+  color:#aaa;
+
+  transition: .3s linear;
 }
 
-.acey {
-    display: flex;
+.topbar nav a:hover{
+  color: red;
+  transition: .3s linear;
 }
 
-.ace3{
-    width: 39.8px;
-    height: 44px;
-    margin-top: 6px;
-    margin-right: 4px;
-}
-
-h2{
-font-family: "Montserrat";
-font-size: 0.9;
-color: white;
-}
-
-.nav_link {
-    margin-left: 2rem;
-    margin-top: 12px;
-    position: relative;
-    font-size: 0.8rem;
-    color: white;
-    text-transform: uppercase;
-    font-weight: medium;
-    text-decoration: none;
-    transition: .3s linear;
-}
-
-.nav_link:hover{
-    color: red;
-    transition: .3s linear;
-}
-
-.ace7{
-    margin-top: 6px;
-    margin-left: 30px;
-    width: 29px;
-    height: 29px;
-}
-
-/* past qisim */
-
+/* hero */
 .hero{
   height:calc(100vh - 90px);
   padding:0 100px;
+  display:flex;
   align-items:center;
-  
-}
-
-.left5{
-    display: flex;
-    justify-content: space-between;
+  justify-content:space-between;
 }
 
 /* left */
@@ -144,6 +113,216 @@ color: white;
 
 .img1{
   width: 700px;
-  height: 600px;
+  height: 550px;
 }
 
+/* 2floor */
+
+h4{
+  display: flex;
+  gap: 15px;
+}
+
+h4 span{
+  letter-spacing: 3%;
+  font-family:Playfair Display,serif;
+  font-size:30px;
+  line-height:1.1;
+  color:#d4af37;
+  margin-bottom:28px;
+  font-weight: 500;
+  margin-left: 1035px;
+}
+
+.astrelle{
+  border: none;
+  background-color: #000;
+  color: #aaa;
+  font-size: 20px;
+  margin-top: -7px;
+
+  transition: .3s linear;
+}
+
+.astrelle:hover{
+  color: red;
+  transition: .3s linear;
+}
+
+.astrel{
+  margin-top: 20px;
+  margin-left: 90px;
+  display:flex;
+  gap:65px;
+}
+
+.catr{
+  width: 400px;
+  height: 290px;
+}
+
+/* 3floor */
+.ast3{
+  margin-top: 40px;
+}
+
+h5{
+  display: flex;
+  gap: 15px;
+}
+
+h5 span{
+  letter-spacing: 3%;
+  font-family:Playfair Display,serif;
+  font-size:30px;
+  line-height:1.1;
+  color:#d4af37;
+  margin-bottom:28px;
+  font-weight: 500;
+  margin-left: 80px;
+}
+
+.astrelle{
+  border-radius: 50%;
+  border: none;
+  background-color: #000;
+  color: #aaa;
+  font-size: 20px;
+  margin-top: -7px;
+
+  transition: .3s linear;
+}
+
+.astrel3{
+  margin-top: 40px;
+  display: flex;
+}
+
+.rush{
+  margin-top: 60px;
+  margin-left:-40px;
+}
+
+h6{
+  letter-spacing: 3%;
+  font-family:Montserrat,serif;
+  font-size:58px;
+  line-height:1.1;
+  color:#d4af37;
+  margin-bottom:28px;
+  font-weight: 700;
+}
+
+p{
+  font-family: Montserrat;
+  font-weight: 100;
+  font-size: 35px;
+  width: 706px;
+  height: 97px;
+}
+
+.sic3{
+  background:linear-gradient(135deg,#f7d87c,#b98a18);
+  color:#000;
+  padding:14px 36px;
+  border:none;
+  box-shadow:0 0 35px rgba(212,175,55,.45);
+  border-radius: 20px;
+  margin-left: 150px;
+}
+
+.sic3:hover{
+  color: brown;
+  box-shadow: 0 0 35px white;
+  transition: .3s linear;
+}
+/* 3.5floor */
+.bore{
+  margin-top: 40px;
+  display: flex;
+}
+.bore3{
+  margin-left: 30px;
+  display: flex;
+  align-items: center;
+}
+
+h3{
+  letter-spacing: 3%;
+  font-family:Montserrat,serif;
+  font-size:58px;
+  line-height:1.1;
+  color:#d4af37;
+  margin-bottom:28px;
+  font-weight: 700;
+}
+
+p{
+  font-family: Montserrat;
+  font-weight: 100;
+  font-size: 35px;
+  width: 706px;
+  height: 97px;
+}
+
+.sic4{
+  background:linear-gradient(135deg,#f7d87c,#b98a18);
+  color:#000;
+  padding:14px 36px;
+  border:none;
+  box-shadow:0 0 35px rgba(212,175,55,.45);
+  border-radius: 20px;
+  margin-left: 150px;
+}
+
+.sic4:hover{
+  color: brown;
+  box-shadow: 0 0 35px white;
+  transition: .3s linear;
+}
+.borem{
+  margin-left: -140px;
+}
+
+/* 4floor */
+
+.connect{
+  display:flex;
+  flex-direction:column;
+  align-items:center;   /* gorizontal markaz */
+  text-align:center;
+  gap:12px;
+  margin-top: 40px;
+}
+
+h2{
+  font-weight: 500;
+  font-size: 25px;
+  line-height:1.1;
+  color:#d4af37;
+}
+
+.deg1{
+  font-weight: 200;
+  font-size: 23px;
+}
+
+.flo4{
+  display: grid;
+  justify-content:center; /* gorizontal */
+  align-items:center;
+}
+
+.imm{
+  display:flex;
+  justify-content:center; /* gorizontal */
+  align-items:center;
+  gap: 20px;
+  
+}
+
+.wes{
+  margin-top: -30px;
+  width: 30px;
+  height: 30px;
+}
